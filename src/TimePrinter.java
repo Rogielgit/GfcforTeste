@@ -35,9 +35,7 @@ public class TimePrinter {
 		String testador; // para saber a string que esta sendo retornada
 		StringTokenizer token = new StringTokenizer(programa, " ");
 		while (token.hasMoreElements()) {
-
 			testador = token.nextElement().toString();
-			// System.out.println(testador +" --> " + n);
 
 			switch (testador) {
 
