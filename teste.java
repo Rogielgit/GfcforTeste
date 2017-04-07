@@ -1,27 +1,21 @@
 
 public class TimePrinter {
 
-    public static void bubbleSort(int[] x) {
-        int n = x.length;
-        int b = 9;  
-    
-        if (b > a)
-        {
-       		if (b = n)
-       		{
-
-       		}
-            b = n;
-        }
-        else {
-            n = b;
-            if (n = b)
-            {
-            	n = b;
-            }
-        }
-    }
+	public static void bubbleSort(int[] x) {
+	
+		int a;
+		int b = 10;
+		int i;
+		for(i = 0; i < b; i++)
+		{
+			b = a;
+		}
+		while(b > a)
+		{
+			if(a > b)
+			{
+				
+			}
+		}
+	}
 }
-
-
-
