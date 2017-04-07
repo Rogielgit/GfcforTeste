@@ -52,7 +52,7 @@ public class TimePrinter {
 				n++;
 				System.out.println(testador + " --> " + n);
 				break;
-			case "int":
+			case "int": //definir todos os tipos 
 				System.out.println(testador + " --> " + n);
 				break;
 			case "for": // é necessario dois blocos
