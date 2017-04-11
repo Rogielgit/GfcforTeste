@@ -8,15 +8,14 @@ public class TimePrinter {
 		int i;
 		for(i = 0; i < b; i++)
 		{
-		    if (a > b)
-		    {
-    		    a = b;
-		    }
-		
+			b = a;
 		}
-		if (a = b){
+		while(b > a)
+		{
+			if(a > b)
+			{
+				
+			}
 		}
-		
-	
 	}
 }
