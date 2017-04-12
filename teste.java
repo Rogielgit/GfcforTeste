@@ -6,16 +6,19 @@ public class TimePrinter {
 		int a;
 		int b = 10;
 		int i;
-		for(i = 0; i < b; i++)
-		{
-		    if (a > b)
-		    {
-    		    a = b;
-		    }
 		
+		if(a > b)
+		{
+		if(a > b)
+		{
 		}
-		if (a = b){
 		}
+		else
+		{
+		}
+		
+		
+		
 		
 	
 	}
