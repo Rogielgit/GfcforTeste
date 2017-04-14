@@ -11,7 +11,6 @@ public class Pilha {// para empilhar a ocorrência de { e }
 	public int removePilha(Stack pilha) {
 		if (pilha.isEmpty() == false) {
 			Integer valor = (Integer) pilha.pop();
-			// System.out.println("Saiu da pilha " + valor);
 			return valor;
 		}
 		return 0;

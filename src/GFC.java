@@ -13,7 +13,7 @@ import com.github.javaparser.ast.CompilationUnit;
 
 public class GFC {
 
-	private static final String Caminho = "teste.java";
+	private static final String Caminho = "programa_de_entrada.java";
 
 	public static void main(String args[]) throws Exception {
 
@@ -28,10 +28,12 @@ public class GFC {
 			arquivo.escreveArquivo(escrita, formatograph);
 
 		} catch (ParseException e) {
-			JOptionPane.showMessageDialog(null, "ERRO LÉXICO OU SINTÁTICO NO PROGRAMA ANALISADO");
+			JOptionPane.showMessageDialog(null, "ERRO LÉXICO OU SINTÁTICO NO PROGRAMA ANALISADO.\n" + e);
 		}
 		Runtime r = Runtime.getRuntime();
-		r.exec("dot graph.dot -Tpng -ografico.ong"); // gerar o grafico
+		r.exec("dot graph.dot -Tpng -ografico.ong"); // executa um sript para gerar o grafico.png
+		JOptionPane.showMessageDialog(null, "Gráfico de Fluxo de Controle gerado no arquivo grafico.png");
+
 
 	}
 
@@ -57,7 +59,6 @@ public class GFC {
 
 		int i = 0;
 		int j = 0;
-		System.out.println(posiWhile[0]);
 
 		Pilha st = new Pilha();
 		Stack pilha = new Stack();
@@ -68,15 +69,29 @@ public class GFC {
 			testador = token.nextElement().toString();
 
 			switch (testador) { // definição para palavras reservadas
-
+			case "boolen":
+				break;
+			case "byte":
+				break;
+			case "short":
+				break;
+			case "int":
+				break;
+			case "long":
+				break;
+			case "float":
+				break;
+			case "double":
+				break;
+			case "String":
+				break;
 			case "if":
 				n++;
 				break;
 			case "else":
 				n++;
 				break;
-			case "int": // definir todos os tipos
-				break;
+
 			case "for": // é necessario dois blocos
 				n++;
 				posifor[j] = n;
@@ -107,7 +122,6 @@ public class GFC {
 					if (valorAtual != 0 && valorTopo != 0) // pilha vazia
 					{
 
-						System.out.println(valorTopo + " -> " + valorAtual);
 						ligVertices.append(valorTopo + " -> " + valorAtual + "\n");
 
 						if (j > 0 && posifor[j - 1] != 0) {
@@ -121,7 +135,6 @@ public class GFC {
 
 								}
 								ligVertices.append(valorAtual + " -> " + atulposiFor[j - 1] + "\n");
-							
 
 							}
 
@@ -133,7 +146,6 @@ public class GFC {
 						{
 
 							if (valorTopo == posiWhile[i - 1]) {
-								System.out.println(valorAtual + " -> " + valorTopo);
 								ligVertices.append(antvalorAtual + " -> " + valorTopo + "\n");
 
 							}
@@ -147,7 +159,6 @@ public class GFC {
 						}
 
 						ligVertices.append(valorAtual + " -> " + estadoFinal + "\n");
-						System.out.println("ultimo " + n);
 					}
 
 				}
@@ -157,7 +168,6 @@ public class GFC {
 
 		}
 		ligVertices.append("}");
-		System.out.println(ligVertices);
 		return ligVertices.toString();
 	}
 
