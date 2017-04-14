@@ -1,7 +1,7 @@
 
-public class TimePrinter {
+public class Exemplo {
 
-	public static void bubbleSort(int[] x) {
+	public static void exemplo3(int[] x) {
 		int n = x.length;
 		int a;
 		for (a = 0 ; a < n; a++){
