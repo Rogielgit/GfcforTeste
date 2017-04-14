@@ -2,8 +2,7 @@ import java.util.Stack;
 
 import com.sun.xml.internal.ws.util.pipe.StandalonePipeAssembler;
 
-public class Pilha {
-
+public class Pilha {// para empilhar a ocorrência de { e }
 	public void inserePilha(Stack pilha, int valor) {
 		pilha.push(new Integer(valor));
 
@@ -12,7 +11,7 @@ public class Pilha {
 	public int removePilha(Stack pilha) {
 		if (pilha.isEmpty() == false) {
 			Integer valor = (Integer) pilha.pop();
-			//System.out.println("Saiu da pilha " + valor);
+			// System.out.println("Saiu da pilha " + valor);
 			return valor;
 		}
 		return 0;
@@ -36,10 +35,10 @@ public class Pilha {
 		return 0;
 
 	}
-	public int tamanhoPilha(Stack pilha)
-	{		
+
+	public int tamanhoPilha(Stack pilha) {
 		return pilha.size();
-		
+
 	}
 
 }

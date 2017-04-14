@@ -5,25 +5,31 @@ import java.io.OutputStreamWriter;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
+import javax.swing.JOptionPane;
+
 import com.github.javaparser.JavaParser;
+import com.github.javaparser.ParseException;
 import com.github.javaparser.ast.CompilationUnit;
 
-public class TimePrinter {
+public class GFC {
 
 	private static final String Caminho = "teste.java";
 
 	public static void main(String args[]) throws Exception {
 
-		TimePrinter timePrinter = new TimePrinter();
+		GFC gfc = new GFC();
 		String formatograph;
+		CompilationUnit cu;
 		Arquivo arquivo = new Arquivo();
 		BufferedWriter escrita = arquivo.criaArquivo();
+		try {
+			cu = JavaParser.parse(new FileInputStream(Caminho));
+			formatograph = (String) gfc.recebePrograma(cu.toString());
+			arquivo.escreveArquivo(escrita, formatograph);
 
-		CompilationUnit cu = JavaParser.parse(new FileInputStream(Caminho));
-		System.out.println(cu.getChildrenNodes());
-		formatograph = (String) timePrinter.recebePrograma(cu.toString());
-		arquivo.escreveArquivo(escrita, formatograph);
-
+		} catch (ParseException e) {
+			JOptionPane.showMessageDialog(null, "ERRO LÉXICO OU SINTÁTICO NO PROGRAMA ANALISADO");
+		}
 		Runtime r = Runtime.getRuntime();
 		r.exec("dot graph.dot -Tpng -ografico.ong"); // gerar o grafico
 
@@ -61,34 +67,31 @@ public class TimePrinter {
 		while (token.hasMoreElements()) {
 			testador = token.nextElement().toString();
 
-			switch (testador) {
+			switch (testador) { // definição para palavras reservadas
 
 			case "if":
 				n++;
-				// System.out.println(testador + " --> " + n);
 				break;
 			case "else":
 				n++;
-				// System.out.println(testador + " --> " + n);
 				break;
 			case "int": // definir todos os tipos
-				// System.out.println(testador + " --> " + n);
 				break;
 			case "for": // é necessario dois blocos
 				n++;
 				posifor[j] = n;
 				j++;
-
-				// System.out.println((n + 1) + " --> " + n);
-				// System.out.println(testador + " --> " + n);
-
-				// System.out.println(testador + " --> " + n);
 				break;
 			case "while":
 				n++;
 				posiWhile[i] = n;
 				i++;
-				// System.out.println(testador + " --> " + n);
+				break;
+			case "try":
+				n++;
+				break;
+			case "catch":
+				n++;
 				break;
 			default:
 				if (testador.equals("{")) {
@@ -118,8 +121,7 @@ public class TimePrinter {
 
 								}
 								ligVertices.append(valorAtual + " -> " + atulposiFor[j - 1] + "\n");
-								// ligVertices.append(n + " -> " + valorTopo +
-								// "\n");
+							
 
 							}
 
