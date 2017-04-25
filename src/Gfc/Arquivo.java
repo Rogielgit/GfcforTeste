@@ -1,3 +1,4 @@
+package Gfc;
 import java.io.BufferedWriter;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -11,10 +12,14 @@ public class Arquivo { // classe para salva a saida para o graphviz ler
 		return escrita;
 		
 	}
-	public void escreveArquivo(BufferedWriter escrita, String string) throws IOException {
+	String escreveArquivo(BufferedWriter escrita, String string) throws IOException {
 
 		escrita.write(string);
+		System.out.println(string);
 		escrita.close();
+		
+		return string;
+		
 	}
 
 }

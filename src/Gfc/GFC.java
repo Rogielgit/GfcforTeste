@@ -1,3 +1,5 @@
+package Gfc;
+
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.OutputStream;
@@ -159,6 +161,7 @@ public class GFC {
 						}
 
 						ligVertices.append(valorAtual + " -> " + estadoFinal + "\n");
+						
 					}
 
 				}
