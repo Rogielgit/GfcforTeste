@@ -15,7 +15,7 @@ import com.github.javaparser.ast.CompilationUnit;
 
 public class GFC {
 
-	private static final String Caminho = "programa_de_entrada.java";
+	private static final String Caminho = "programa_de_entrada3.java"; // especificar aqui o programa que queremos testar
 
 	public static void main(String args[]) throws Exception {
 
@@ -171,6 +171,7 @@ public class GFC {
 
 		}
 		ligVertices.append("}");
+		System.out.println(ligVertices.toString());
 		return ligVertices.toString();
 	}
 

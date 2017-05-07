@@ -15,28 +15,30 @@ public class ClassTesteArquivo {
 	private BufferedWriter entrada;
 
 	@Before
-	public void criaArquivo(){
+	public void criaArquivo() throws IOException{
 		arquivo = new Arquivo();
-		//entrada = arquivo.criaArquivo();
+		entrada = arquivo.criaArquivo();
 
 	}
 
 	@Test
-	public void testeArquivo(){
+	public void testeArquivo() throws IOException{
 		
-		//entrada = arquivo.criaArquivo();
-		try {
-			System.out.println(arquivo.escreveArquivo(entrada, "rogiel"));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		try {
-			assertEquals("rogiel", arquivo.escreveArquivo(entrada, "rogiel"));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		/*digraph {
+			1 -> 2
+			2 -> 3
+			1 -> 4
+			4 -> 3
+			}*/
+		assertEquals("digraph {1 -> 2"
+				+ "2 -> 3"
+				+ "1 -> 4"
+				+ "4 -> 3"
+				+ "}", arquivo.escreveArquivo(entrada, "digraph {1 -> 2"
+						+ "2 -> 3"
+						+ "1 -> 4"
+						+ "4 -> 3"
+						+ "}"));
 
 	}
 }

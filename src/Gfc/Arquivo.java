@@ -15,9 +15,7 @@ public class Arquivo { // classe para salva a saida para o graphviz ler
 	String escreveArquivo(BufferedWriter escrita, String string) throws IOException {
 
 		escrita.write(string);
-		System.out.println(string);
-		escrita.close();
-		
+		escrita.close();		
 		return string;
 		
 	}
