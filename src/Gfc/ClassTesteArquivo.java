@@ -7,9 +7,7 @@ import java.io.IOException;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ClassTesteArquivo {
-
-	
+public class ClassTesteArquivo {	
 	
 
 	private Arquivo arquivo;
