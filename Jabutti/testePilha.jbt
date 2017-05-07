@@ -1,0 +1,176 @@
+<JABUTI>
+    <PROJECT name="/home/computeiro/Desktop/TrabalhoTesteInspencao/Jabutti/testePilha.jbt" type="research" mobility="N" CFGOption="1">
+        <BASE_CLASS name="Gfc.ClassTestePilha"/>
+        <CLASSPATH path="/home/computeiro/Desktop/TrabalhoTesteInspencao/bin"/>
+        <JUNIT_SRC_DIR dir=""/>
+        <JUNIT_BIN_DIR dir=""/>
+        <JUNIT_TEST_SET name=""/>
+        <JUNIT_JAR name=""/>
+        <AVOIDED_PACKAGES>
+        </AVOIDED_PACKAGES>
+        <INST_CLASS  name="Gfc.ClassTestePilha" size="1583" checksum="52-0">
+            <EXTEND name="java.lang.Object" level="1"/>
+            <SOURCE name=""/>
+            <METHOD id="5" name="testeVaziaTrue()V">
+                <All-Nodes-ei id="0" totreq="1" act="1" inf="0">
+                    <NODE id="0" label="0" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Nodes-ei>
+                <All-Nodes-ed id="1" totreq="0" act="0" inf="0">
+                </All-Nodes-ed>
+                <All-Edges-ei id="2" totreq="0" act="0" inf="0">
+                </All-Edges-ei>
+                <All-Edges-ed id="3" totreq="0" act="0" inf="0">
+                </All-Edges-ed>
+                <All-Uses-ei id="4" totreq="0" act="0" inf="0">
+                </All-Uses-ei>
+                <All-Uses-ed id="5" totreq="0" act="0" inf="0">
+                </All-Uses-ed>
+                <All-Pot-Uses-ei id="6" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ei>
+                <All-Pot-Uses-ed id="7" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ed>
+            </METHOD>
+            <METHOD id="4" name="testeTamanho()V">
+                <All-Nodes-ei id="0" totreq="1" act="1" inf="0">
+                    <NODE id="0" label="0" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Nodes-ei>
+                <All-Nodes-ed id="1" totreq="0" act="0" inf="0">
+                </All-Nodes-ed>
+                <All-Edges-ei id="2" totreq="0" act="0" inf="0">
+                </All-Edges-ei>
+                <All-Edges-ed id="3" totreq="0" act="0" inf="0">
+                </All-Edges-ed>
+                <All-Uses-ei id="4" totreq="0" act="0" inf="0">
+                </All-Uses-ei>
+                <All-Uses-ed id="5" totreq="0" act="0" inf="0">
+                </All-Uses-ed>
+                <All-Pot-Uses-ei id="6" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ei>
+                <All-Pot-Uses-ed id="7" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ed>
+            </METHOD>
+            <METHOD id="1" name="setUp()V">
+                <All-Nodes-ei id="0" totreq="1" act="1" inf="0">
+                    <NODE id="0" label="0" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Nodes-ei>
+                <All-Nodes-ed id="1" totreq="0" act="0" inf="0">
+                </All-Nodes-ed>
+                <All-Edges-ei id="2" totreq="0" act="0" inf="0">
+                </All-Edges-ei>
+                <All-Edges-ed id="3" totreq="0" act="0" inf="0">
+                </All-Edges-ed>
+                <All-Uses-ei id="4" totreq="0" act="0" inf="0">
+                </All-Uses-ei>
+                <All-Uses-ed id="5" totreq="0" act="0" inf="0">
+                </All-Uses-ed>
+                <All-Pot-Uses-ei id="6" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ei>
+                <All-Pot-Uses-ed id="7" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ed>
+            </METHOD>
+            <METHOD id="6" name="testeVaziaFalse()V">
+                <All-Nodes-ei id="0" totreq="1" act="1" inf="0">
+                    <NODE id="0" label="0" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Nodes-ei>
+                <All-Nodes-ed id="1" totreq="0" act="0" inf="0">
+                </All-Nodes-ed>
+                <All-Edges-ei id="2" totreq="0" act="0" inf="0">
+                </All-Edges-ei>
+                <All-Edges-ed id="3" totreq="0" act="0" inf="0">
+                </All-Edges-ed>
+                <All-Uses-ei id="4" totreq="0" act="0" inf="0">
+                </All-Uses-ei>
+                <All-Uses-ed id="5" totreq="0" act="0" inf="0">
+                </All-Uses-ed>
+                <All-Pot-Uses-ei id="6" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ei>
+                <All-Pot-Uses-ed id="7" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ed>
+            </METHOD>
+            <METHOD id="3" name="testeRemovevazio()V">
+                <All-Nodes-ei id="0" totreq="1" act="1" inf="0">
+                    <NODE id="0" label="0" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Nodes-ei>
+                <All-Nodes-ed id="1" totreq="0" act="0" inf="0">
+                </All-Nodes-ed>
+                <All-Edges-ei id="2" totreq="0" act="0" inf="0">
+                </All-Edges-ei>
+                <All-Edges-ed id="3" totreq="0" act="0" inf="0">
+                </All-Edges-ed>
+                <All-Uses-ei id="4" totreq="0" act="0" inf="0">
+                </All-Uses-ei>
+                <All-Uses-ed id="5" totreq="0" act="0" inf="0">
+                </All-Uses-ed>
+                <All-Pot-Uses-ei id="6" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ei>
+                <All-Pot-Uses-ed id="7" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ed>
+            </METHOD>
+            <METHOD id="2" name="teste1()V">
+                <All-Nodes-ei id="0" totreq="1" act="1" inf="0">
+                    <NODE id="0" label="0" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Nodes-ei>
+                <All-Nodes-ed id="1" totreq="0" act="0" inf="0">
+                </All-Nodes-ed>
+                <All-Edges-ei id="2" totreq="0" act="0" inf="0">
+                </All-Edges-ei>
+                <All-Edges-ed id="3" totreq="0" act="0" inf="0">
+                </All-Edges-ed>
+                <All-Uses-ei id="4" totreq="0" act="0" inf="0">
+                </All-Uses-ei>
+                <All-Uses-ed id="5" totreq="0" act="0" inf="0">
+                </All-Uses-ed>
+                <All-Pot-Uses-ei id="6" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ei>
+                <All-Pot-Uses-ed id="7" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ed>
+            </METHOD>
+            <METHOD id="0" name="&lt;init&gt;()V">
+                <All-Nodes-ei id="0" totreq="2" act="2" inf="0">
+                    <NODE id="0" label="4" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <NODE id="1" label="0" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Nodes-ei>
+                <All-Nodes-ed id="1" totreq="0" act="0" inf="0">
+                </All-Nodes-ed>
+                <All-Edges-ei id="2" totreq="1" act="1" inf="0">
+                    <EDGE id="0" from="0" to="4" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Edges-ei>
+                <All-Edges-ed id="3" totreq="0" act="0" inf="0">
+                </All-Edges-ed>
+                <All-Uses-ei id="4" totreq="0" act="0" inf="0">
+                </All-Uses-ei>
+                <All-Uses-ed id="5" totreq="0" act="0" inf="0">
+                </All-Uses-ed>
+                <All-Pot-Uses-ei id="6" totreq="1" act="1" inf="0">
+                    <C_USE id="0" var="L@0" def="0" use="4" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Pot-Uses-ei>
+                <All-Pot-Uses-ed id="7" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ed>
+            </METHOD>
+            <METHOD id="7" name="testeVerTopo()V">
+                <All-Nodes-ei id="0" totreq="1" act="1" inf="0">
+                    <NODE id="0" label="0" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Nodes-ei>
+                <All-Nodes-ed id="1" totreq="0" act="0" inf="0">
+                </All-Nodes-ed>
+                <All-Edges-ei id="2" totreq="0" act="0" inf="0">
+                </All-Edges-ei>
+                <All-Edges-ed id="3" totreq="0" act="0" inf="0">
+                </All-Edges-ed>
+                <All-Uses-ei id="4" totreq="0" act="0" inf="0">
+                </All-Uses-ei>
+                <All-Uses-ed id="5" totreq="0" act="0" inf="0">
+                </All-Uses-ed>
+                <All-Pot-Uses-ei id="6" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ei>
+                <All-Pot-Uses-ed id="7" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ed>
+            </METHOD>
+        </INST_CLASS>
+        <CLASS  name="Gfc.Pilha" size="0000" checksum="00000000">
+            <EXTEND name="java.lang.Object" level="1"/>
+        </CLASS>
+        <TEST_SET last_id="0">
+        </TEST_SET>
+    </PROJECT>
+</JABUTI>
