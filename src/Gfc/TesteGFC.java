@@ -47,7 +47,7 @@ public class TesteGFC {
 	
 	}
 	@Test
-	public void TesteWhile()
+	public void TesteWhile() 
 	{
 		assertEquals("digraph {\n"
 				+ "2 -> 3\n"
@@ -56,7 +56,7 @@ public class TesteGFC {
 				+ "4 -> 2\n"
 				+ "1 -> 2\n"
 				+ "2 -> 5\n"
-				+ "}", gfc.recebePrograma(cu.toString()));
+				+ "}", (String) gfc.recebePrograma(cu.toString()));
 	}
 	@Test
 	public void TestFor(){

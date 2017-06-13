@@ -1,0 +1,33 @@
+AOIU_1:15:void_inserePilha(java.util.Stack,int):valor => -valor
+AOIS_1:15:void_inserePilha(java.util.Stack,int):valor => valor++
+AOIS_2:15:void_inserePilha(java.util.Stack,int):valor => valor--
+ROR_1:20:int_removePilha(java.util.Stack): pilha.isEmpty() == false  =>   pilha.isEmpty() != false
+ROR_2:29:boolean_estavazia(java.util.Stack): pilha.isEmpty() == true  =>   pilha.isEmpty() != true
+ROR_3:39:int_vertopo(java.util.Stack): pilha.isEmpty() == false  =>   pilha.isEmpty() != false
+COI_1:20:int_removePilha(java.util.Stack): pilha.isEmpty() == false  =>  !(pilha.isEmpty() == false)
+COI_2:29:boolean_estavazia(java.util.Stack): pilha.isEmpty() == true  =>  !(pilha.isEmpty() == true)
+COI_3:39:int_vertopo(java.util.Stack): pilha.isEmpty() == false  =>  !(pilha.isEmpty() == false)
+LOI_1:15:void_inserePilha(java.util.Stack,int):valor => ~valor
+SDL_1:15:void_inserePilha(java.util.Stack,int): pilha.push( new java.lang.Integer( valor ) );  =>  
+SDL_2:21:int_removePilha(java.util.Stack): if (pilha.isEmpty() == false) {     java.lang.Integer valor = (java.lang.Integer) pilha.pop();     return valor; } return 0;  =>   return 0;
+SDL_3:24:int_removePilha(java.util.Stack): if (pilha.isEmpty() == false) {     java.lang.Integer valor = (java.lang.Integer) pilha.pop();     return valor; }  =>   if (true) {     java.lang.Integer valor = (java.lang.Integer) pilha.pop();     return valor; }
+SDL_4:23:int_removePilha(java.util.Stack): return valor;  =>   return 0;
+SDL_5:29:boolean_estavazia(java.util.Stack): if (pilha.isEmpty() == true) {     return true; } else {     return false; }  =>  
+SDL_6:34:boolean_estavazia(java.util.Stack): if (pilha.isEmpty() == true) {     return true; } else {     return false; }  =>   if (true) {     return true; } else {     return false; }
+SDL_7:31:boolean_estavazia(java.util.Stack): return true;  =>   return false;
+SDL_8:33:boolean_estavazia(java.util.Stack): return false;  =>   return true;
+SDL_9:40:int_vertopo(java.util.Stack): java.lang.Integer valor; if (pilha.isEmpty() == false) {     valor = (java.lang.Integer) pilha.pop();     pilha.push( new java.lang.Integer( valor ) );     return valor; } return 0;  =>   java.lang.Integer valor; return 0;
+SDL_10:42:int_vertopo(java.util.Stack): valor = (java.lang.Integer) pilha.pop(); pilha.push( new java.lang.Integer( valor ) ); return valor;  =>   pilha.push( new java.lang.Integer( valor ) ); return valor;
+SDL_11:42:int_vertopo(java.util.Stack): valor = (java.lang.Integer) pilha.pop(); pilha.push( new java.lang.Integer( valor ) ); return valor;  =>   valor = (java.lang.Integer) pilha.pop(); return valor;
+SDL_12:44:int_vertopo(java.util.Stack): if (pilha.isEmpty() == false) {     valor = (java.lang.Integer) pilha.pop();     pilha.push( new java.lang.Integer( valor ) );     return valor; }  =>   if (true) {     valor = (java.lang.Integer) pilha.pop();     pilha.push( new java.lang.Integer( valor ) );     return valor; }
+SDL_13:43:int_vertopo(java.util.Stack): return valor;  =>   return 0;
+SDL_14:50:int_tamanhoPilha(java.util.Stack): return pilha.size();  =>   return 0;
+ODL_1:20:int_removePilha(java.util.Stack):pilha.isEmpty() == false => pilha.isEmpty()
+ODL_2:20:int_removePilha(java.util.Stack):pilha.isEmpty() == false => false
+ODL_3:29:boolean_estavazia(java.util.Stack):pilha.isEmpty() == true => pilha.isEmpty()
+ODL_4:29:boolean_estavazia(java.util.Stack):pilha.isEmpty() == true => true
+ODL_5:39:int_vertopo(java.util.Stack):pilha.isEmpty() == false => pilha.isEmpty()
+ODL_6:39:int_vertopo(java.util.Stack):pilha.isEmpty() == false => false
+CDL_1:20:int_removePilha(java.util.Stack):pilha.isEmpty() == false => pilha.isEmpty()
+CDL_2:29:boolean_estavazia(java.util.Stack):pilha.isEmpty() == true => pilha.isEmpty()
+CDL_3:39:int_vertopo(java.util.Stack):pilha.isEmpty() == false => pilha.isEmpty()

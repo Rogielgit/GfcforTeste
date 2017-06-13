@@ -1,0 +1,2 @@
+PCD_1:21:(java.lang.Integer) pilha.pop() => pilha.pop()
+PCD_2:40:(java.lang.Integer) pilha.pop() => pilha.pop()

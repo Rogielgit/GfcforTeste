@@ -1,0 +1,13 @@
+criar o caminho para onde esta o arquivo mujava.jar e openjava.jar
+CLASSPATH=$CLASSPATH:/home/mujava/mujava.jar:/home/mujava/openjava.jar:/java1.4/jdk1.7.0/lib/tools.jar ; export CLASSPATH
+./usr/lib/jvm/java-8-oracle/lib/tools.jar
+./usr/lib/jvm/java-8-oracle/db/lib/derbytools.jar
+./usr/lib/jvm/java-8-oracle/db/lib/derbyoptionaltools.jar
+./usr/lib/jvm/java-7-openjdk-amd64/lib/tools.jar
+./usr/lib/astah_professional/lib/tools.jar
+
+
+criar a variável com o caminho para aonde está o projeto
+Mujava_HOME=/home/computeiro/Desktop/TrabalhoTesteInspencao/
+
+java mujava.gui.GenMutantsMain // para compilar

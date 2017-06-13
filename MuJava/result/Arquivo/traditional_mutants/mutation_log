@@ -1,0 +1,3 @@
+SDL_1:30:java.lang.String_escreveArquivo(java.io.BufferedWriter,java.lang.String): escrita.write( string ); escrita.close(); return string;  =>   escrita.close(); return string;
+SDL_2:30:java.lang.String_escreveArquivo(java.io.BufferedWriter,java.lang.String): escrita.write( string ); escrita.close(); return string;  =>   escrita.write( string ); return string;
+SDL_3:31:java.lang.String_escreveArquivo(java.io.BufferedWriter,java.lang.String): return string;  =>   return \"\";

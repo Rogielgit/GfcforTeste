@@ -1,5 +1,5 @@
 <JABUTI>
-    <PROJECT name="/home/computeiro/Desktop/TrabalhoTesteInspencao/Jabutti/teste.jbt" type="research" mobility="N" CFGOption="1">
+    <PROJECT name="/home/computeiro/Desktop/TrabalhoTesteInspencao/Jabutti/testeArquivo.jbt" type="research" mobility="N" CFGOption="1">
         <BASE_CLASS name="Gfc.ClassTesteArquivo"/>
         <CLASSPATH path="/home/computeiro/Desktop/TrabalhoTesteInspencao/bin"/>
         <JUNIT_SRC_DIR dir=""/>
@@ -7,7 +7,6 @@
         <JUNIT_TEST_SET name=""/>
         <JUNIT_JAR name=""/>
         <AVOIDED_PACKAGES>
-            <PACKAGE name="Gfc"/>
         </AVOIDED_PACKAGES>
         <INST_CLASS  name="Gfc.Arquivo" size="1045" checksum="52-0">
             <EXTEND name="java.lang.Object" level="1"/>

@@ -167,9 +167,171 @@
                 </All-Pot-Uses-ed>
             </METHOD>
         </INST_CLASS>
-        <CLASS  name="Gfc.Pilha" size="0000" checksum="00000000">
+        <INST_CLASS  name="Gfc.Pilha" size="1206" checksum="52-0">
             <EXTEND name="java.lang.Object" level="1"/>
-        </CLASS>
+            <SOURCE name=""/>
+            <METHOD id="1" name="inserePilha(Ljava/util/Stack;I)V">
+                <All-Nodes-ei id="0" totreq="1" act="1" inf="0">
+                    <NODE id="0" label="0" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Nodes-ei>
+                <All-Nodes-ed id="1" totreq="0" act="0" inf="0">
+                </All-Nodes-ed>
+                <All-Edges-ei id="2" totreq="0" act="0" inf="0">
+                </All-Edges-ei>
+                <All-Edges-ed id="3" totreq="0" act="0" inf="0">
+                </All-Edges-ed>
+                <All-Uses-ei id="4" totreq="0" act="0" inf="0">
+                </All-Uses-ei>
+                <All-Uses-ed id="5" totreq="0" act="0" inf="0">
+                </All-Uses-ed>
+                <All-Pot-Uses-ei id="6" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ei>
+                <All-Pot-Uses-ed id="7" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ed>
+            </METHOD>
+            <METHOD id="3" name="estavazia(Ljava/util/Stack;)Z">
+                <All-Nodes-ei id="0" totreq="3" act="3" inf="0">
+                    <NODE id="0" label="0" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <NODE id="1" label="9" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <NODE id="2" label="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Nodes-ei>
+                <All-Nodes-ed id="1" totreq="0" act="0" inf="0">
+                </All-Nodes-ed>
+                <All-Edges-ei id="2" totreq="2" act="2" inf="0">
+                    <EDGE id="0" from="0" to="9" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <EDGE id="1" from="0" to="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Edges-ei>
+                <All-Edges-ed id="3" totreq="0" act="0" inf="0">
+                </All-Edges-ed>
+                <All-Uses-ei id="4" totreq="2" act="2" inf="0">
+                    <P_USE id="0" var="L@1" def="0" from="0" to="9" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <P_USE id="1" var="L@1" def="0" from="0" to="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Uses-ei>
+                <All-Uses-ed id="5" totreq="0" act="0" inf="0">
+                </All-Uses-ed>
+                <All-Pot-Uses-ei id="6" totreq="8" act="8" inf="0">
+                    <C_USE id="0" var="L@0" def="0" use="9" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <C_USE id="1" var="L@1" def="0" use="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <C_USE id="2" var="L@0" def="0" use="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <P_USE id="3" var="L@1" def="0" from="0" to="9" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <P_USE id="4" var="L@1" def="0" from="0" to="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <P_USE id="5" var="L@0" def="0" from="0" to="9" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <P_USE id="6" var="L@0" def="0" from="0" to="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <C_USE id="7" var="L@1" def="0" use="9" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Pot-Uses-ei>
+                <All-Pot-Uses-ed id="7" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ed>
+            </METHOD>
+            <METHOD id="5" name="tamanhoPilha(Ljava/util/Stack;)I">
+                <All-Nodes-ei id="0" totreq="1" act="1" inf="0">
+                    <NODE id="0" label="0" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Nodes-ei>
+                <All-Nodes-ed id="1" totreq="0" act="0" inf="0">
+                </All-Nodes-ed>
+                <All-Edges-ei id="2" totreq="0" act="0" inf="0">
+                </All-Edges-ei>
+                <All-Edges-ed id="3" totreq="0" act="0" inf="0">
+                </All-Edges-ed>
+                <All-Uses-ei id="4" totreq="0" act="0" inf="0">
+                </All-Uses-ei>
+                <All-Uses-ed id="5" totreq="0" act="0" inf="0">
+                </All-Uses-ed>
+                <All-Pot-Uses-ei id="6" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ei>
+                <All-Pot-Uses-ed id="7" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ed>
+            </METHOD>
+            <METHOD id="4" name="vertopo(Ljava/util/Stack;)I">
+                <All-Nodes-ei id="0" totreq="3" act="3" inf="0">
+                    <NODE id="0" label="36" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <NODE id="1" label="0" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <NODE id="2" label="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Nodes-ei>
+                <All-Nodes-ed id="1" totreq="0" act="0" inf="0">
+                </All-Nodes-ed>
+                <All-Edges-ei id="2" totreq="2" act="2" inf="0">
+                    <EDGE id="0" from="0" to="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <EDGE id="1" from="0" to="36" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Edges-ei>
+                <All-Edges-ed id="3" totreq="0" act="0" inf="0">
+                </All-Edges-ed>
+                <All-Uses-ei id="4" totreq="3" act="3" inf="0">
+                    <C_USE id="0" var="L@1" def="0" use="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <P_USE id="1" var="L@1" def="0" from="0" to="36" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <P_USE id="2" var="L@1" def="0" from="0" to="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Uses-ei>
+                <All-Uses-ed id="5" totreq="0" act="0" inf="0">
+                </All-Uses-ed>
+                <All-Pot-Uses-ei id="6" totreq="8" act="8" inf="0">
+                    <C_USE id="0" var="L@1" def="0" use="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <C_USE id="1" var="L@0" def="0" use="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <C_USE id="2" var="L@1" def="0" use="36" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <C_USE id="3" var="L@0" def="0" use="36" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <P_USE id="4" var="L@1" def="0" from="0" to="36" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <P_USE id="5" var="L@1" def="0" from="0" to="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <P_USE id="6" var="L@0" def="0" from="0" to="36" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <P_USE id="7" var="L@0" def="0" from="0" to="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Pot-Uses-ei>
+                <All-Pot-Uses-ed id="7" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ed>
+            </METHOD>
+            <METHOD id="0" name="&lt;init&gt;()V">
+                <All-Nodes-ei id="0" totreq="2" act="2" inf="0">
+                    <NODE id="0" label="4" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <NODE id="1" label="0" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Nodes-ei>
+                <All-Nodes-ed id="1" totreq="0" act="0" inf="0">
+                </All-Nodes-ed>
+                <All-Edges-ei id="2" totreq="1" act="1" inf="0">
+                    <EDGE id="0" from="0" to="4" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Edges-ei>
+                <All-Edges-ed id="3" totreq="0" act="0" inf="0">
+                </All-Edges-ed>
+                <All-Uses-ei id="4" totreq="0" act="0" inf="0">
+                </All-Uses-ei>
+                <All-Uses-ed id="5" totreq="0" act="0" inf="0">
+                </All-Uses-ed>
+                <All-Pot-Uses-ei id="6" totreq="1" act="1" inf="0">
+                    <C_USE id="0" var="L@0" def="0" use="4" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Pot-Uses-ei>
+                <All-Pot-Uses-ed id="7" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ed>
+            </METHOD>
+            <METHOD id="2" name="removePilha(Ljava/util/Stack;)I">
+                <All-Nodes-ei id="0" totreq="3" act="3" inf="0">
+                    <NODE id="0" label="0" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <NODE id="1" label="20" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <NODE id="2" label="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Nodes-ei>
+                <All-Nodes-ed id="1" totreq="0" act="0" inf="0">
+                </All-Nodes-ed>
+                <All-Edges-ei id="2" totreq="2" act="2" inf="0">
+                    <EDGE id="0" from="0" to="20" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <EDGE id="1" from="0" to="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Edges-ei>
+                <All-Edges-ed id="3" totreq="0" act="0" inf="0">
+                </All-Edges-ed>
+                <All-Uses-ei id="4" totreq="3" act="3" inf="0">
+                    <C_USE id="0" var="L@1" def="0" use="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <P_USE id="1" var="L@1" def="0" from="0" to="20" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <P_USE id="2" var="L@1" def="0" from="0" to="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Uses-ei>
+                <All-Uses-ed id="5" totreq="0" act="0" inf="0">
+                </All-Uses-ed>
+                <All-Pot-Uses-ei id="6" totreq="8" act="8" inf="0">
+                    <C_USE id="0" var="L@1" def="0" use="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <C_USE id="1" var="L@0" def="0" use="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <P_USE id="2" var="L@1" def="0" from="0" to="20" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <P_USE id="3" var="L@1" def="0" from="0" to="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <C_USE id="4" var="L@1" def="0" use="20" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <P_USE id="5" var="L@0" def="0" from="0" to="20" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <P_USE id="6" var="L@0" def="0" from="0" to="7" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                    <C_USE id="7" var="L@0" def="0" use="20" active="Y" covered="N" infeasible="N" effectivetcs=""/>
+                </All-Pot-Uses-ei>
+                <All-Pot-Uses-ed id="7" totreq="0" act="0" inf="0">
+                </All-Pot-Uses-ed>
+            </METHOD>
+        </INST_CLASS>
         <TEST_SET last_id="0">
         </TEST_SET>
     </PROJECT>

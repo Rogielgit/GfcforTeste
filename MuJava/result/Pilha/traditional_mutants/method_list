@@ -1,0 +1,5 @@
+void_inserePilha(java.util.Stack,int)
+int_removePilha(java.util.Stack)
+boolean_estavazia(java.util.Stack)
+int_vertopo(java.util.Stack)
+int_tamanhoPilha(java.util.Stack)

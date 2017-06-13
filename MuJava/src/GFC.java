@@ -2,6 +2,8 @@ package Gfc;
 
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
@@ -13,13 +15,7 @@ import com.github.javaparser.ast.CompilationUnit;
 
 public class GFC {
 
-	private static final String Caminho = "programa_de_entrada3.java"; // especificar
-																		// aqui
-																		// o
-																		// programa
-																		// que
-																		// queremos
-																		// testar
+	private static final String Caminho = "programa_de_entrada3.java"; // especificar aqui o programa que queremos testar
 
 	public static void main(String args[]) throws Exception {
 
@@ -37,9 +33,9 @@ public class GFC {
 			JOptionPane.showMessageDialog(null, "ERRO LÉXICO OU SINTÁTICO NO PROGRAMA ANALISADO.\n" + e);
 		}
 		Runtime r = Runtime.getRuntime();
-		r.exec("dot graph.dot -Tpng -ografico.ong"); // executa um sript para
-														// gerar o grafico.png
+		r.exec("dot graph.dot -Tpng -ografico.ong"); // executa um sript para gerar o grafico.png
 		JOptionPane.showMessageDialog(null, "Gráfico de Fluxo de Controle gerado no arquivo grafico.png");
+
 
 	}
 
@@ -165,7 +161,7 @@ public class GFC {
 						}
 
 						ligVertices.append(valorAtual + " -> " + estadoFinal + "\n");
-
+						
 					}
 
 				}

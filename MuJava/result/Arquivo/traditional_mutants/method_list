@@ -1,0 +1,2 @@
+java.io.BufferedWriter_criaArquivo()
+java.lang.String_escreveArquivo(java.io.BufferedWriter,java.lang.String)
